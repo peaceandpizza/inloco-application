@@ -1,14 +1,27 @@
-Versão do Ruby: 2.2.3
-Database utilizado: PostgreSQL
-Migrate: rake db:migrate RAILS_ENV=development para desenvolvimento
-rake db:migrate RAILS_ENV=testing para testes
+### Módulos usados
+- Ruby: **2.2.3**
+- Rails: **4.2.5**
+- Database: **PostgreSQL**
+- Mailer:
+  - Development: MailCatcher gem
+  - Production: SendGrid
 
-pedro-inloco-login.herokuapp.com
+### Migrate
+```
+# para desenvolvimento
+$ rake db:migrate RAILS_ENV=development 
 
-Development: mailcatcher
-Production: Heroku SendGrid
+# para testes
+$ rake db:migrate RAILS_ENV=testing 
+```
 
-/ root funciona da mesma forma que /home
-portanto se você entrar em / ou /home na primeira vez
-haverá uma mensagem avisando que é necessário realizar
-o login primeiro
+[Aplicativo no Heroku](https://pedro-inloco-login.herokuapp.com/)
+
+### Rotas
+
+- '/' - *redireciona para home*
+- '/home' - *caso exista uma sessão válida, mostra a mensagem especificada, caso contrário vai pra tela de login e mostra uma mensagem de erro*
+- '/login' - *mostra o formulário de login*
+- '/register' - *mostra o formulário de registro*
+- '/password/new' - *formulário de senha esquecida*
+- '/confirmation/new' - *formulário de reenvio de emaail de confirmação*

@@ -27,6 +27,7 @@ pt-BR:
   minimum_characters: "Caractéres no mínimo"
   registration_form_title: "Formulário de Registro"
   index_message: "Parabéns! Você acaba de se registrar!"
+  confirmation_disclaimer: "Para finalizar o seu registro verifique o seu email para a mensagem de confirmação."
   forgotten_password_email_message: "Alguém realizou um pedido de restauração de senha. Você pode clicar no link abaixo para gerar uma nova senha."
   forgotten_password_email_button: "Criar nova senha"
   unsolicited_email_disclaimer: "Se você não solicitou este email, por favor ignore-o."
