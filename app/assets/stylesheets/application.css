@@ -13,3 +13,27 @@
  *= require_tree .
  *= require_self
  */
+.row-centered {
+    text-align:center;
+}
+.col-centered {
+    display:inline-block;
+    float:none;
+    text-align:center;
+    margin-right:-4px;
+}
+.field input, .actions input{
+    margin-bottom: 20px;
+}
+
+#flash_alert, #error_explanation{
+    color: #843534;
+}
+
+@media (max-width: 767px) {
+    a {
+        display: inline-block;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}

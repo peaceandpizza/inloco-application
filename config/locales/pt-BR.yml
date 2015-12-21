@@ -1,0 +1,24 @@
+pt-BR:
+  activerecord:
+    attributes:
+      user:
+        password: "Senha"
+        password_confirmation: "Confirmação de senha"
+    model:
+      user: "Usuário"
+  helpers:
+    label:
+      user:
+        password: "Senha"
+        password_confirmation: "Confirmação de Senha"
+        register: "Registrar"
+        login: "Entrar"
+        remember_me: "Permanecer conectado"
+  login_button_title: "Entrar"
+  login_link_title: "Efetuar login"
+  register_link_title: "Registrar"
+  forgot_link_title: "Esqueceu a senha?"
+  confirmation_link_title: "Não recebeu email de confirmação?"
+  password_confirmation_label: "Confirme a sua senha"
+  minimum_characters: "Caractéres no mínimo"
+  registration_form_title: "Formulário de Registro"

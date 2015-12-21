@@ -6,5 +6,6 @@ Rails.application.routes.draw do
   end
 
   root to: "samples#index"
+  get '/home' => "samples#index"
 
 end
