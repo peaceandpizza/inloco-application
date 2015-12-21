@@ -1,3 +1,5 @@
+[Aplicativo no Heroku](https://pedro-inloco-login.herokuapp.com/)
+
 ### Módulos usados
 - Ruby: **2.2.3**
 - Rails: **4.2.5**
@@ -15,7 +17,9 @@ $ rake db:migrate RAILS_ENV=development
 $ rake db:migrate RAILS_ENV=testing 
 ```
 
-[Aplicativo no Heroku](https://pedro-inloco-login.herokuapp.com/)
+### Rodando o Projeto
+
+step-by-step aqui
 
 ### Rotas
 
