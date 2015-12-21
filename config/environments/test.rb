@@ -23,8 +23,8 @@ Rails.application.configure do
   # Don't care if the mailer can't send.
   config.action_mailer.raise_delivery_errors = false
   config.action_mailer.delivery_method = :smtp
-  config.action_mailer.default_url_options = { host: 'localhost', port: 3000}
-  config.action_mailer.smtp_settings = {:address => 'localhost', :port => 1025}
+  config.action_mailer.default_url_options = { host: ENV['DEFAULT_HOST'], port: ENV['DEFAULT_PORT']}
+  config.action_mailer.smtp_settings = {:address => ENV['DEFAULT_HOST'], :port => ENV['MAILER_PORT']}
 
   # Raise exceptions instead of rendering exception templates.
   config.action_dispatch.show_exceptions = false

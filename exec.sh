@@ -1,7 +1,13 @@
 #!/bin/sh
 #url do database
-export PGHOST=localhost
-export DATABASE_URL="postgres://postgres:pedro1902@localhost:5432"
+export DATABASE_LOGIN=""
+export DATABASE_PASSWORD=""
+export DEFAULT_HOST="localhost"
+export DEFAULT_PORT=3000
+export MAILER_PORT=1025
 
-#para rodar o projeto no activator
-rails server $@
+#inicia o mailcatcher para rodar localmente o projeto
+mailcatcher &
+
+#inicia o projeto em ambiente de desenvolvimento
+rails s $@

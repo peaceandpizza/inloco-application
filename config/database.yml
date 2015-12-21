@@ -6,9 +6,13 @@ default: &default
 development:
   <<: *default
   database: simple_login_development
+  username: <%= ENV["DATABASE_LOGIN"] %>
+  password: <%= ENV["DATABASE_PASSWORD"] %>
 test:
   <<: *default
   database: simple_login_test
+  username: <%= ENV["DATABASE_LOGIN"] %>
+  password: <%= ENV["DATABASE_PASSWORD"] %>
 production:
   url:  <%= ENV["DATABASE_URL"] %>
   pool: <%= ENV["DB_POOL"] || ENV['MAX_THREADS'] || 18 %>
