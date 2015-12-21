@@ -13,6 +13,16 @@
  *= require_tree .
  *= require_self
  */
+body {
+    padding-top: 65px;
+}
+ul {
+    padding: 0;
+    list-style-type: none;
+}
+.navbar img{
+    height: 100%;
+}
 .row-centered {
     text-align:center;
 }
@@ -26,9 +36,24 @@
     margin-bottom: 20px;
 }
 
+.navbutton{
+    padding-right: 30px;
+    padding-top: 14px;
+    text-decoration: none;
+    color: #0f0f0f;
+}
+
+.navbutton:hover{
+    color: #5e5e5e;
+}
+
 #flash_alert, #error_explanation{
     color: #843534;
 }
+#error_explanation{
+    margin-bottom: 30px;
+}
+
 
 @media (max-width: 767px) {
     a {
