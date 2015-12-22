@@ -8,18 +8,33 @@
   - Development: MailCatcher gem
   - Production: SendGrid
 
+### Rodando o Projeto
+
+Instalar as dependencias
+rails:
+`$ gem install rails `
+
+mailcatcher:
+`$ gem install mailcatcher `
+
+*caso haja algum erro durante a instalação no OSX El Capitan, usar as flags:*
+`$ gem install mailcatcher -- --with-cppflags=-I/usr/local/opt/openssl/include `
+
+`$ bundle install`
+
 ### Migrate
 ```
 # para desenvolvimento
-$ rake db:migrate RAILS_ENV=development 
+$ rake db:migrate RAILS_ENV=development
 
 # para testes
-$ rake db:migrate RAILS_ENV=testing 
+$ rake db:migrate RAILS_ENV=testing
 ```
 
-### Rodando o Projeto
+### Executar Localmente
 
-Para a execução de testes, utilizar o arquivo *exec-tests.sh* ou *exec.sh*, mas antes disto configurar os parâmetros:
+Abra o arquivo *exec.sh* e edite de acordo com as suas informações locais
+
 ```
 #login do database
 export DATABASE_LOGIN=""
@@ -39,15 +54,18 @@ export MAILER_PORT=1025
 ```
 
 ```
-#rodar a sequência de testes especificados na pasta de specs.
-$ ./exec-tests.sh
-```
-
-```
-#executar o projeto para que você o execute localmente.
 $ ./exec.sh
 ```
 
+
+### Testes
+
+Para a execução de testes, utilizar o arquivo *exec-tests.sh*, mas antes disto configurar os parâmetros da mesma forma que foram editados os parametros para o *exec.sh*:
+
+```
+#rodar a sequência de testes especificados na pasta de specs.
+$ ./exec-tests.sh
+```
 
 ### Rotas
 
@@ -57,3 +75,4 @@ $ ./exec.sh
 - '/register' - *mostra o formulário de registro*
 - '/password/new' - *formulário de senha esquecida*
 - '/confirmation/new' - *formulário de reenvio de emaail de confirmação*
+- localhost:1025 - *se você estiver usando a porta padrão para o mailcatcher, as mensagens de email podem ser visualizadas neste endereço*
