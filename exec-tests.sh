@@ -1,6 +1,6 @@
 #!/bin/sh
 #login do database
-export DATABASE_LOGIN="pedrocoutinho"
+export DATABASE_LOGIN=""
 
 #senha do database
 export DATABASE_PASSWORD=""

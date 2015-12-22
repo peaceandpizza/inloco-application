@@ -38,11 +38,16 @@ export DEFAULT_PORT=3000
 export MAILER_PORT=1025
 ```
 
-exec-tests irá rodar a sequência de testes especificados na pasta de specs.
-exec irá executar o projeto para que você o execute localmente.
+```
+#rodar a sequência de testes especificados na pasta de specs.
+$ ./exec-tests.sh
+```
 
+```
+#executar o projeto para que você o execute localmente.
+$ ./exec.sh
+```
 
-step-by-step aqui
 
 ### Rotas
 
