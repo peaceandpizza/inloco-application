@@ -18,4 +18,4 @@ export MAILER_PORT=1025
 mailcatcher &
 
 #inicia o projeto em ambiente de desenvolvimento
-rails s $@
+rspec spec $@
